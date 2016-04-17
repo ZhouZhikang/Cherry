@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/zhikangzhou/AndroidStudioProjects/Cherry/sample/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="blue">#ff82e0ff</color>
+    <color name="green">#ff8dd304</color>
+    <color name="grey">#ffd3d3d3</color>
+    <color name="list_item_pressed">#1A000000</color>
+    <color name="orange">#ffffdc7e</color>
+    <color name="red">#fff10800</color>
+    <color name="yellow">#fffffbae</color>
+    <declare-styleable name="StaggeredGridView"><attr format="integer" name="column_count"/><attr format="integer" name="column_count_portrait"/><attr format="integer" name="column_count_landscape"/><attr format="dimension" name="item_margin"/><attr format="dimension" name="grid_paddingLeft"/><attr format="dimension" name="grid_paddingRight"/><attr format="dimension" name="grid_paddingTop"/><attr format="dimension" name="grid_paddingBottom"/></declare-styleable>
+    <!-- From: file:/Users/zhikangzhou/AndroidStudioProjects/Cherry/sample/src/main/res/values/integers.xml -->
+    <eat-comment/>
+    <integer name="grid_column_count">2</integer>
+    <!-- From: file:/Users/zhikangzhou/AndroidStudioProjects/Cherry/sample/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_name">AndroidStaggeredGridSample</string>
+    <!-- From: file:/Users/zhikangzhou/AndroidStudioProjects/Cherry/sample/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+</resources>

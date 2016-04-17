@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.test.zhikangzhou.cherry.fragment.Tab03Fragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/deep_blue"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout2"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/iv_login_img"
+            android:background="@mipmap/ic_face"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="登录"
+            android:id="@+id/tv_myinfo"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/border2"
+        android:id="@+id/ll_favorite"
+        android:paddingLeft="20dp"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_alignParentStart="true"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@mipmap/ic_star_black"
+            android:id="@+id/imageView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="我的收藏"
+            android:id="@+id/tv_favorite"
+            android:layout_margin="10dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-1px"
+        android:paddingLeft="20dp"
+        android:background="@drawable/border2"
+        android:id="@+id/ll_custom_tag"
+        android:layout_below="@+id/ll_favorite"
+        android:layout_alignParentStart="true"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@mipmap/ic_book_black"
+            android:backgroundTint="@color/blue"
+            android:id="@+id/imageView2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="我的标签"
+            android:id="@+id/tv_custom_tag"
+            android:layout_margin="10dp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

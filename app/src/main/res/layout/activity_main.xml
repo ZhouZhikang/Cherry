@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.test.zhikangzhou.cherry.activity.MainActivity">
+
+    <FrameLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:id="@+id/id_fragment"
+        android:layout_above="@+id/linearLayout"></FrameLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentBottom="true"
+        android:background="#333334"
+        android:id="@+id/linearLayout">
+
+        <LinearLayout
+            android:id="@+id/ll_tab01"
+            android:orientation="vertical"
+            android:layout_width="3dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp">
+
+            <ImageView
+                android:tint="@color/white"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/iv_tab01"
+                android:src="@mipmap/ic_book_black"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/white"
+                android:text="订阅"
+                android:id="@+id/tv_tab01"
+                android:textSize="10sp"
+                android:layout_marginTop="3dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_tab02"
+            android:orientation="vertical"
+            android:layout_width="3dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp">
+
+            <ImageView
+                android:tint="@color/white"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/ic_explore_black"
+                android:scaleType="fitXY"
+                android:id="@+id/iv_tab02" />
+
+            <TextView
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="发现"
+                android:id="@+id/tv_tab02"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_tab03"
+            android:orientation="vertical"
+            android:layout_width="3dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp">
+
+            <ImageView
+                android:tint="@color/white"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/ic_person_outline_black"
+                android:scaleType="fitXY"
+                android:id="@+id/iv_tab03" />
+
+            <TextView
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="我的"
+                android:id="@+id/tv_tab03"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

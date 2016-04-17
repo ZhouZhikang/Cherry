@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cherry.cherry" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <!-- 蓝牙分享所需的权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_face"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="cherry.activity.WelcomeActivity"
+            android:theme="@style/blank"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cherry.activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:label="Main" >
+        </activity>
+        <activity
+            android:name="cherry.activity.TagActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_tag">
+        </activity>
+        <activity
+            android:name="cherry.activity.TagSelectActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_tag_select" >
+        </activity>
+        <activity
+            android:name="cherry.activity.NewsDetailActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_news" >
+        </activity>
+        <activity
+            android:name="cherry.activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/blank"
+            android:label="@string/title_activity_tag" >
+        </activity>
+        <activity
+            android:name="cherry.activity.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/blank"
+            android:label="@string/title_activity_tag" >
+        </activity>
+        <activity
+            android:name="cherry.activity.CommentActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_tag" >
+        </activity>
+        <activity
+            android:name="cherry.activity.MyCollectionActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_tag" >
+        </activity>
+        <activity
+            android:name="cherry.activity.ChangePwdAcitivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_tag" >
+        </activity>
+        <activity
+            android:name="cherry.activity.ChangeUsernameActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_tag" >
+        </activity>
+        <activity
+            android:name="cherry.activity.AllCommentAcivity"
+            android:screenOrientation="portrait"
+            android:label="所有评论">
+        </activity>
+        <activity
+            android:name="cherry.activity.PersonalActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_tag" >
+        </activity>
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 微信分享回调 -->
+        <activity
+            android:name="app.wxapi.WXEntryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true" />
+
+    </application>
+
+</manifest>

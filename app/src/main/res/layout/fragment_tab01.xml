@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.test.zhikangzhou.cherry.fragment.Tab01Fragment">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="36dp"
+        android:id="@+id/rl_tab01_title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/deep_blue"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="订阅"
+            android:textColor="#ffffff"
+            android:id="@+id/tv_title"
+            android:layout_gravity="center_vertical"
+            android:gravity="center" />
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_add"
+            android:tint="#ffffff"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:id="@+id/ib_add"
+            android:layout_gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_custom_tab"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/rl_tab01_title"
+        android:background="@drawable/border2"
+        android:layout_height="43dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/tv_groupname" />
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/id_swipe_ly"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/ll_custom_tab"
+        android:layout_height="match_parent" >
+
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tab01List_main"
+                android:layout_centerHorizontal="true"
+                android:divider="#ffeaeaea"
+                android:dividerHeight="1px"
+                android:background="#ffffff" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

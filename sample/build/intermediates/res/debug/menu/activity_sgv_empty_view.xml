@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/reload" android:title="Reload" android:showAsAction="always|withText" />
+
+</menu>
+<!-- From: file:/Users/zhikangzhou/AndroidStudioProjects/Cherry/sample/src/main/res/menu/activity_sgv_empty_view.xml -->
